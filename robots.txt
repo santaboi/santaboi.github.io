@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://santaboi.github.io/al-folio/sitemap.xml
+Sitemap: https://santaboi.github.io/sitemap.xml
