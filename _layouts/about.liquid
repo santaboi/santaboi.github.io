@@ -40,14 +40,6 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-    
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
@@ -71,6 +63,14 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
   </article>
-  <a href="https://clustrmaps.com/site/1c04g"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=LfMMz4WDBrzZlOjJo4eo3ZEPmIjyUZhxrSWiyz666XI&cl=ffffff" /></a>
 </div>
