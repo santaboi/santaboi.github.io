@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-subtitle: Electrical Engineering B.S. Student @ <a href='https://www.ee.ncku.edu.tw/en/'>NCKU</a>
+subtitle: Computer Science M.S. Student @ University of Maryland College Park
 
 profile:
   align: right
