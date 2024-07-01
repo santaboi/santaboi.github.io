@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎊 1 paper is accepted as <b>NAACL'24</b>Findings!!
+🎊 One paper is accepted as <b>NAACL'24</b> Findings!!

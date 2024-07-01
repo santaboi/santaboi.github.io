@@ -23,5 +23,6 @@ I work as a research assistant for Computer Vision, advised by Prof. [Chih-Chung
 
 I earn my B.S. in Electrical Engineering from NCKU in 2024 . During Bachelor's degree, I was fortunate to work with Prof. [Lun-Wei Ku](https://scholar.google.com/citations?user=SzcLXlkAAAAJ&hl=en) at Acadamia Sinica, and Prof. [Hsun-Ping Hsieh](https://scholar.google.com/citations?user=f6SBzrAAAAAJ&hl=en) at, NCKU.
 
-Recently, I am actively pursuing Master's degree and focus on research topics. 
+📢 Currently, I am finding prospective research opportunities. Feel free to reach out to me if there is any suitable position!! 
 
+email: [yangfc[at]umd.edu]()
