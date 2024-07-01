@@ -6,11 +6,11 @@ permalink: /
 subtitle: Computer Science M.S. Student @ <a href='https://gradschool.umd.edu/'>University of Maryland, College Park</a>
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-  <p><b>email:</b>yangfc[at]umd.edu</p>
+  <p>email: yangfc[at]umd.edu</p>
 
 
 news: true # includes a list of news items
