@@ -25,4 +25,7 @@ I earn my B.S. in Electrical Engineering from NCKU in 2024 . During Bachelor's d
 
 📢 Currently, I am finding prospective research opportunities. Feel free to reach out to me if there is any suitable position!! 
 
-email: [yangfc[at]umd.edu]()
+email: <span class="contact-color"><b>yangfc[at]umd.edu</b></span>
+
+<!--Google Scholar/Linkedin/Github/Medium-->
+<a class="contact-color" href="https://scholar.google.com/citations?user=kZ6hM70AAAAJ&hl=en"><b>Google Scholar</b></a>/<a class="contact-color" href="https://www.linkedin.com/in/yang-fan-chiang-72a681227/"><b>Linkedin</b></a>/<a class="contact-color" href="https://github.com/santaboi"><b>Github</b></a>/<a class="contact-color" href="https://medium.com/@e94081107"><b>Medium</b></a>/
