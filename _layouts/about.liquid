@@ -40,29 +40,33 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+    <!-- New Company Icons Section -->
+    <h3>Selected Experience</h3>
+    <section class="company-icons-container py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="/assets/img/experiences/google.png" alt="Company 1" class="img-fluid company-icon mb-3">
+            <h5>Google</h5>
+            <p>Hardware Product Sprint</p>
+            <p>2022 Jun. - 2022 Sep.</p>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="/assets/img/experiences/sinica.png" alt="Company 2" class="img-fluid company-icon mb-3">
+            <h4>Academia Sinica</h4>
+            <p>Research Assistant @ NLPSA</p>
+            <p>2022 Jun. - 2023 Jun.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="/assets/img/experiences/ncku.png" alt="Company 3" class="img-fluid company-icon mb-3">
+            <h5>National Cheng Kung University</h5>
+            <p>Research Assistant @ ACVLab</p>
+            <p>2023 Jun. - 2024 Feb.</p>
+          </div>
+        </div>
       </div>
-    {% endif %}
-  
-  <!-- <h2>Experiences</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        1 of 3
-      </div>
-      <div class="col">
-        2 of 3
-      </div>
-      <div class="col">
-        3 of 3
-      </div>
-    </div>
-  </div> -->
+    </section>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
@@ -87,9 +91,23 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
-  
-  </article>
-  <div class="container">
-    <a href="https://clustrmaps.com/site/1c04g"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=LfMMz4WDBrzZlOjJo4eo3ZEPmIjyUZhxrSWiyz666XI&cl=ffffff" /></a>
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-12">
+        <div id="map-container" class="map-container">
+          <a href="https://clustrmaps.com/site/1c04g"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=LfMMz4WDBrzZlOjJo4eo3ZEPmIjyUZhxrSWiyz666XI&cl=ffffff" /></a>
+        </div>
+      </div>
+    </div>
   </div>
+  </article>
+
 </div>

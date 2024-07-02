@@ -1,6 +1,13 @@
 /******************************************************************************
  * Content
  ******************************************************************************/
+// map widget
+.map-container {
+  width: 100%;
+  height: 150px; /* Set a base height, adjust as needed */
+  //border: 1px solid #ccc; /* Optional: Add a border for visibility */
+}
+
 
 body {
   padding-bottom: 70px;
