@@ -10,7 +10,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-  <p>email: yangfc[at]umd.edu</p>
+  <p>email: yangfc[at]umd[dot]edu</p>
 
 
 news: true # includes a list of news items
