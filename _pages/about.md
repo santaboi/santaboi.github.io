@@ -19,8 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a grad student at Department of Computer Science, University of Maryland, advised by [Yizheng Chen](https://surrealyz.github.io/) and [Tom Goldstein](https://scholar.google.com/citations?user=KmSuVtgAAAAJ&hl=en)
-My research interests mainly lies in AI safety and how to make AI reliable, trustable,and with good social impact. <b>Currently, I've been focusing on AI Agents security and the evaluation of large scale models (e.g., GenAI, LLMs).</b> 
+I am a grad student at Department of Computer Science, University of Maryland, advised by [Yizheng Chen](https://surrealyz.github.io/) and [Tom Goldstein](https://scholar.google.com/citations?user=KmSuVtgAAAAJ&hl=en).
+My research interests mainly lies in AI safety and how to make AI reliable, trustable,and with good social impact. <b>Currently, I've been focusing on <u>AI Agents security</u> and <u>the alignment/evaluation of large scale models (e.g., GenAI, LLMs).</u></b> 
 
 I did my B.S. in Electrical Engineering at National Cheng Kung University in 2024 . During Bachelor's degree, I was fortunate to work with Prof. [Lun-Wei Ku](https://scholar.google.com/citations?user=SzcLXlkAAAAJ&hl=en) at Acadamia Sinica, Prof. [Chih-Chung Hsu](https://scholar.google.com/citations?user=mIWRYc4AAAAJ&hl=en) and Prof. [Hsun-Ping Hsieh](https://scholar.google.com/citations?user=f6SBzrAAAAAJ&hl=en) at, NCKU.
 
