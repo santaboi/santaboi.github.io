@@ -8,6 +8,45 @@
   //border: 1px solid #ccc; /* Optional: Add a border for visibility */
 }
 
+// Experience section styling
+.company-icons-container {
+  .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px; // Set minimum height for all containers
+    
+    // Content wrapper
+    .company-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 1rem;
+      
+      // Logo section
+      .company-logo {
+        margin-bottom: 1rem;
+        
+        img {
+          max-height: 150px;
+          width: auto;
+        }
+      }
+      
+      // Text content section
+      .company-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        
+        // Push date to bottom
+        .company-date {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+}
+
 
 body {
   padding-bottom: 70px;
@@ -50,6 +89,46 @@ body.sticky-bottom-footer {
 /******************************************************************************
  * Publications
  ******************************************************************************/
+// Publication preview image styling
+.publications {
+  .preview {
+    width: 100%;
+    min-width: 300px;  // Increased minimum width
+    max-width: 1200px; // Increased maximum width
+    height: auto;
+    object-fit: cover;
+    margin: 1rem 0;
+    
+    // Responsive breakpoints
+    @media (max-width: 576px) {  // Mobile
+      max-width: 100%;
+    }
+    
+    @media (min-width: 577px) and (max-width: 992px) {  // Tablet
+      max-width: 700px;  // Increased from 550px
+    }
+    
+    @media (min-width: 993px) {  // Desktop
+      max-width: 1200px;  // Increased from 1000px
+    }
+  }
+  
+  // Adjust the column width and ensure it maintains structure
+  .col-sm-2 {
+    min-height: 100px; // Ensures column doesn't collapse
+    @media (min-width: 576px) {
+      flex: 0 0 40%; // Slightly increased from 35%
+      max-width: 70%; // Increased from 65%
+    }
+
+    &.abbr {
+      padding: 1rem;  // Add padding when no image
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
 
 // TODO: redefine publications layout.
 

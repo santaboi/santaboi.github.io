@@ -4,18 +4,23 @@
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+        {% if entry.preview contains '.mp4' or entry.preview contains '.gif' %}
+          <video class="preview z-depth-1 rounded" autoplay loop muted playsinline>
+            <source src="{{ entry.preview | prepend: '/assets/img/publication_preview/' }}" type="video/mp4">
+          </video>
         {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=false
-            alt=entry.preview
-          %}
+          {% if entry.preview contains '://' %}
+            <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {% include figure.liquid
+              path=entry_path
+              sizes = "200px"
+              class="preview z-depth-1 rounded"
+              zoomable=false
+              alt=entry.preview
+            %}
+          {% endif %}
         {% endif %}
       {% elsif entry.abbr %}
         {% if site.data.venues[entry.abbr] %}
