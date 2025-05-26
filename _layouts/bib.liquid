@@ -97,6 +97,18 @@
       {% endfor %}
       {% assign more_authors = author_array_size | minus: author_array_limit %}
 
+      {% if entry.tldr %}
+        <div class="tldr">
+          <strong>TLDR:</strong> {{ entry.tldr }}
+        </div>
+      {% endif %}
+
+      {% if entry.equal_note %}
+        <div class="equal_note">
+          <strong>Equal Contribution:</strong> {{ entry.equal_note }}
+        </div>
+      {% endif %}
+
       {% assign more_authors_hide = more_authors | append: ' more author' %}
       {% if more_authors > 0 %}
         {% if more_authors > 1 %}

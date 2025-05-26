@@ -2,6 +2,20 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+ .tldr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.equal_note {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
  //custom color 
 .contact-color {
   //color: #2698ba; 
