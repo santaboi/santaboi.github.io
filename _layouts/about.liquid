@@ -118,6 +118,13 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+    <!-- Misc. -->
+    {% if page.misc %}
+      <div style="margin-top: 20px; padding: 20px;">
+        <h2>Misc</h2>
+        <p>{{ page.misc }}</p>
+      </div>
+    {% endif %}
   <div class="container my-4">
     <div class="row">
       <div class="col-12">
@@ -128,5 +135,4 @@ layout: default
     </div>
   </div>
   </article>
-
 </div>
