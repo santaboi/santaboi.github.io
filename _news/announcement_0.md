@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-🎊 Our paper about <a href="https://vulnerable-ai-agents.github.io/">Web Agent Security</a> is accepted by <b>ICLR'25</b> @BuildingTrust!
+Our paper about <a href="https://vulnerable-ai-agents.github.io/">`Web Agent Security`</a> is accepted to <b>ICLR'25</b> @BuildingTrust!
 

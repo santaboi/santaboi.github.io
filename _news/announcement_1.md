@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-🎊 One paper is accepted by <b>CVPR'24</b> Workshop!!!
+One paper is accepted to <b>CVPR'24</b> Workshop!!!
 

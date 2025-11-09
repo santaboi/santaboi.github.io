@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎊 One paper is accepted as <b>NAACL'24</b> Findings!!
+New paper about `Multi-Agent Fake News Debunking` is on <b>NAACL'24</b> Findings!!
