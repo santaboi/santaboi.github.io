@@ -98,10 +98,33 @@ body.sticky-bottom-footer {
     height: auto;
     object-fit: cover;
     margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+    
+    // Hover effect for enlargement and floating
+    &:hover {
+      transform: scale(1.5);
+      z-index: 1000;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 
+                  0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      
+      // Disable hover effect on touch devices to prevent sticky hover
+      @media (hover: none) and (pointer: coarse) {
+        transform: none;
+        box-shadow: none;
+        z-index: auto;
+      }
+    }
     
     // Responsive breakpoints
     @media (max-width: 576px) {  // Mobile
       max-width: 100%;
+      // Reduced hover effect on mobile
+      &:hover {
+        transform: scale(1.2);
+      }
     }
     
     @media (min-width: 577px) and (max-width: 992px) {  // Tablet
