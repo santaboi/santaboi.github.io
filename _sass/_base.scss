@@ -21,6 +21,25 @@
   color: #840028;
 }
 
+.mentorship-callout {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  color: $white-color;
+  background-color: #840028;
+  border-radius: 0.75rem;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-color,
+  .contact-color:hover,
+  .contact-color:focus {
+    color: $white-color;
+    text-decoration: underline;
+  }
+}
+
 .sinica-icon {
   max-width: 80%; /* Reduce this further if needed */
   height: auto;
