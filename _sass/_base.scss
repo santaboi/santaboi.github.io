@@ -310,6 +310,14 @@ blockquote {
 .about-intro-copy {
   min-width: 0;
 
+  .inline-school-logo {
+    display: inline-block;
+    width: 1.35em;
+    height: 1.35em;
+    object-fit: contain;
+    vertical-align: -0.3em;
+  }
+
   p:first-child {
     margin-top: 0;
   }
