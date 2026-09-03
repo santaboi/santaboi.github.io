@@ -48,19 +48,19 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #{#13294b};
-  --global-code-bg-color: #{$code-bg-color-dark};
+  --global-bg-color: #{#181a1d};
+  --global-code-bg-color: #{#24272b};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
   --global-theme-color: #{#ff5f05}; //cyan-color
   --global-hover-color: #{#ff5f05}; //cyan-color
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #{#111315};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #{#383c42};
+  --global-card-bg-color: #{#22252a};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -89,5 +89,12 @@ html[data-theme="dark"] {
   }
   .repo-img-dark {
     display: block;
+  }
+
+  .inline-school-logo--umass {
+    padding: 0.08em;
+    background-color: #f7f1e8;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
   }
 }
