@@ -6,7 +6,7 @@ permalink: /
 subtitle: Computer Science Ph.D. Student @ <a class="contact-color" href='https://www.cics.umass.edu/'><b>University of Massachusetts Amherst</b></a>
 misc: "I love cooking in my free time—it feels a bit like research, where I try out ideas, learn from the results, and sometimes stumble on surprisingly tasty dishes."
 intro: |
-  I am a first-year Ph.D. student in Computer Science at UMass Amherst, advised by [Eugene Bagdasarian](https://people.cs.umass.edu/~eugene/). I work on AI security and safety, with a focus on making AI agents and language models transparent, reliable, and aligned with human needs.
+  I am a first-year Ph.D. student in Computer Science at UMass Amherst, advised by [Eugene Bagdasarian](https://people.cs.umass.edu/~eugene/). I work on <u>AI security and safety, with a focus on making AI agents and language models transparent, reliable, and aligned with human needs</u>.
 
   Previously, I completed my M.S. in Computer Science at [UMD](https://umd.edu/), where I worked with [Tom Goldstein](https://scholar.google.com/citations?user=KmSuVtgAAAAJ&hl=en) and [Yizheng Chen](https://surrealyz.github.io/). I received my B.S. in Electrical Engineering from NCKU in 2024.
 
@@ -15,7 +15,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # contact links are displayed in the compact contact row below
