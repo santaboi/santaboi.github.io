@@ -2,7 +2,7 @@
 layout: page
 permalink: /blog/
 title: Random Thoughts
-nav: true
+nav: false
 nav_order: 3
 ---
 

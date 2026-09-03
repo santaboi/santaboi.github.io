@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-subtitle: Computer Science Master's Student @ <a class="contact-color" href='https://gradschool.umd.edu/'><b>University of Maryland, College Park</b></a>
+subtitle: Computer Science Ph.D. Student @ <a class="contact-color" href='https://www.umass.edu/'><b>University of Massachusetts Amherst</b></a>
 misc: "I love cooking in my free time—it feels a bit like research, where I try out ideas, learn from the results, and sometimes stumble on surprisingly tasty dishes."
 
 profile:
@@ -11,10 +11,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-  <p>email: yangfc[at]umd[dot]edu</p>
+  <p>email: yfanchiang[at]cs[dot]umass[dot]edu</p>
 
 news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
