@@ -19,10 +19,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a second-year master's student at the Department of Computer Science, University of Maryland, working closely with [Yizheng Chen](https://surrealyz.github.io/) and [Tom Goldstein](https://scholar.google.com/citations?user=KmSuVtgAAAAJ&hl=en).
-My research interests mainly lie in AI safety and how to make AI reliable, trustworthy, and with good social impact. <b>Currently, I've been focusing on <u>AI Agents security</u> and <u>the alignment/evaluation of large-scale models (e.g., GenAI, LLMs).</u></b>
+I am a first-year Ph.D. student in Computer Science at UMass Amherst, advised by [Eugene Bagdasarian](https://people.cs.umass.edu/~eugene/). I work on AI security and safety, with a focus on making AI agents and language models transparent, reliable, and aligned with human needs.
 
-I did my B.S. in Electrical Engineering at National Cheng Kung University in 2024. During Bachelor's degree, I was fortunate to work with Prof. [Lun-Wei Ku](https://scholar.google.com/citations?user=SzcLXlkAAAAJ&hl=en) at Acadamia Sinica, Prof. [Chih-Chung Hsu](https://scholar.google.com/citations?user=mIWRYc4AAAAJ&hl=en) and Prof. [Hsun-Ping Hsieh](https://scholar.google.com/citations?user=f6SBzrAAAAAJ&hl=en) at, NCKU.
+Previously, I completed my M.S. in Computer Science at [UMD](https://umd.edu/), where I worked with [Tom Goldstein](https://scholar.google.com/citations?user=KmSuVtgAAAAJ&hl=en) and [Yizheng Chen](https://surrealyz.github.io/). I received my B.S. in Electrical Engineering from NCKU in 2024.
 
 <div style="clear: both;"></div>
 
