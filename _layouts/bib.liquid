@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+    <div class="col-sm-2 {% if entry.preview %}preview-wrapper{% else %}abbr{% endif %}">
       {% if entry.preview %}
         {% if entry.preview contains '.mp4' or entry.preview contains '.gif' %}
           <video class="preview z-depth-1 rounded" autoplay loop muted playsinline>
@@ -13,7 +13,8 @@
             <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {% else %}
             {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-            {% include figure.liquid
+            {%
+              include figure.liquid
               path=entry_path
               sizes = "200px"
               class="preview z-depth-1 rounded"
@@ -96,7 +97,6 @@
         {% endif %}
       {% endfor %}
       {% assign more_authors = author_array_size | minus: author_array_limit %}
-
 
       {% assign more_authors_hide = more_authors | append: ' more author' %}
       {% if more_authors > 0 %}
@@ -283,14 +283,10 @@
     {% endif %}
 
     {% if entry.equal_note %}
-      <div class="equal_note">
-        <strong>Equal Contribution:</strong> {{ entry.equal_note }}
-      </div>
+      <div class="equal_note"><strong>Equal Contribution:</strong> {{ entry.equal_note }}</div>
     {% endif %}
     {% if entry.tldr %}
-      <div class="tldr">
-        <strong>TLDR:</strong> {{ entry.tldr }}
-      </div>
+      <div class="tldr"><strong>TLDR:</strong> {{ entry.tldr }}</div>
     {% endif %}
   </div>
 </div>

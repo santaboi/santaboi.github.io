@@ -1,6 +1,14 @@
-<div class="news">
-  {% if site.latest_posts != blank %}
-    {% assign latest_posts_size = site.posts | size %}
+{% assign latest_posts = site.posts %}
+{% assign latest_include_only = site.latest_posts.latest_include_only %}
+{% if latest_include_only and latest_include_only != empty %}
+  {% assign latest_posts = latest_posts | where_exp: 'post', 'latest_include_only contains post.path' %}
+{% elsif site.latest_posts.featured_only %}
+  {% assign latest_posts = latest_posts | where: 'featured', true %}
+{% endif %}
+{% assign latest_posts_size = latest_posts | size %}
+
+{% if site.latest_posts != blank and latest_posts_size > 0 %}
+  <div class="news">
     <div
       class="table-responsive"
       {% if site.latest_posts.scrollable and latest_posts_size > 3 %}
@@ -8,7 +16,6 @@
       {% endif %}
     >
       <table class="table table-sm table-borderless">
-        {% assign latest_posts = site.posts %}
         {% if site.latest_posts.limit %}
           {% assign latest_posts_limit = site.latest_posts.limit %}
         {% else %}
@@ -42,7 +49,5 @@
         {% endfor %}
       </table>
     </div>
-  {% else %}
-    <p>No posts so far...</p>
-  {% endif %}
-</div>
+  </div>
+{% endif %}

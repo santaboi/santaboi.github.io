@@ -4,7 +4,12 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      <img src="/assets/img/umd_testudo.png" alt="Icon" class="name-icon" style="width: 50px; height: 50px; margin-right: 0px; vertical-align: middle;">
+      <img
+        src="/assets/img/umd_testudo.png"
+        alt="Icon"
+        class="name-icon"
+        style="width: 50px; height: 50px; margin-right: 0px; vertical-align: middle;"
+      >
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
@@ -97,10 +102,16 @@ layout: default
 
     <!-- Latest posts -->
     {% if page.latest_posts %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      {% capture latest_posts_html %}
+        {% include latest_posts.liquid %}
+      {% endcapture %}
+      {% assign latest_posts_html = latest_posts_html | strip %}
+      {% unless latest_posts_html == '' %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
+        </h2>
+        {{ latest_posts_html }}
+      {% endunless %}
     {% endif %}
 
     <!-- Selected papers -->
@@ -125,14 +136,16 @@ layout: default
         <p>{{ page.misc }}</p>
       </div>
     {% endif %}
-  <div class="container my-4">
-    <div class="row">
-      <div class="col-12">
-        <div id="map-container" class="map-container mx-auto" style="width: fit-content;">
-          <a href="https://clustrmaps.com/site/1c04g" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=LfMMz4WDBrzZlOjJo4eo3ZEPmIjyUZhxrSWiyz666XI&cl=ffffff" /></a>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-12">
+          <div id="map-container" class="map-container mx-auto" style="width: fit-content;">
+            <a href="https://clustrmaps.com/site/1c04g" title="Visit tracker"
+              ><img src="//www.clustrmaps.com/map_v2.png?d=LfMMz4WDBrzZlOjJo4eo3ZEPmIjyUZhxrSWiyz666XI&cl=ffffff"
+            ></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </article>
 </div>
