@@ -118,77 +118,80 @@ body.sticky-bottom-footer {
 /******************************************************************************
  * Publications
  ******************************************************************************/
-// Publication preview image styling
+// Compact publication rows with expandable media previews
 .publications {
-  .preview {
-    width: 100%;
-    min-width: 300px; // Increased minimum width
-    max-width: 1200px; // Increased maximum width
-    height: auto;
-    object-fit: cover;
-    margin: 1rem 0;
-    cursor: zoom-in;
+  .publication-entry {
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
     position: relative;
-    transition:
-      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-      border-radius 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 8px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    overflow: visible;
+
+    &:hover {
+      z-index: 20;
+    }
+
+    > .col-sm-2,
+    > .col-sm-8,
+    > .col-sm-10 {
+      width: auto;
+      max-width: none;
+      min-height: 0;
+      padding-right: 0;
+      padding-left: 0;
+      flex: none;
+    }
   }
 
   .preview-wrapper {
     position: relative;
     z-index: 0;
+
+    figure {
+      margin: 0;
+    }
   }
 
-  // Enlarge previews only on devices with a precise pointing device.
+  .publication-entry .preview {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition:
+      transform 0.22s ease,
+      box-shadow 0.22s ease,
+      border-radius 0.22s ease;
+    transform-origin: top left;
+    border-radius: 8px;
+  }
+
   @media (hover: hover) and (pointer: fine) {
     .preview-wrapper:hover {
-      z-index: 1000;
+      z-index: 30;
     }
 
-    .preview:hover {
-      transform: scale(1.5);
-      z-index: 1000;
+    .preview-wrapper:hover .preview {
+      transform: scale(2.5);
       box-shadow:
-        0 25px 50px -12px rgba(0, 0, 0, 0.25),
-        0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        0 20px 40px -12px rgba(0, 0, 0, 0.32),
+        0 10px 18px -8px rgba(0, 0, 0, 0.18);
       border-radius: 12px;
     }
   }
 
-  // Responsive breakpoints
-  @media (max-width: 576px) {
-    .preview {
-      min-width: 0;
-      max-width: 100%;
-    }
-  }
-
-  @media (min-width: 577px) and (max-width: 992px) {
-    .preview {
-      max-width: 700px; // Increased from 550px
-    }
-  }
-
-  @media (min-width: 993px) {
-    .preview {
-      max-width: 1200px; // Increased from 1000px
-    }
-  }
-
-  // Adjust the column width and ensure it maintains structure
-  .col-sm-2 {
-    min-height: 100px; // Ensures column doesn't collapse
-    @media (min-width: 576px) {
-      flex: 0 0 40%; // Slightly increased from 35%
-      max-width: 70%; // Increased from 65%
-    }
-
-    &.abbr {
-      padding: 1rem; // Add padding when no image
-      display: flex;
-      align-items: center;
+  @media (max-width: 575.98px) {
+    .publication-entry {
+      grid-template-columns: 6.25rem minmax(0, 1fr);
+      gap: 0.85rem;
     }
   }
 }
