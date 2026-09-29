@@ -4,7 +4,7 @@ title: about
 permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 subtitle: Computer Science Ph.D. Student @ <a class="contact-color" href='https://www.cics.umass.edu/'><b>University of Massachusetts Amherst</b></a>
-misc: "I love cooking in my free time—it feels a bit like research, where I try out ideas, learn from the results, and sometimes stumble on surprisingly yum dishes. I am a die hard Ravens and Knicks fan."
+misc: "I love cooking in my free time—it feels a bit like research, where I try out ideas, learn from the results, and sometimes stumble on surprisingly yum dishes. I am a die hard Baltimore Ravens and Knicks fan. Go Flock!!"
 intro: |
   I am a first-year Ph.D. student in Computer Science at [UMass Amherst](https://www.cics.umass.edu/)&nbsp;<img class="inline-school-logo inline-school-logo--umass" src="/assets/img/umass.png" alt="" aria-hidden="true">, advised by Prof. [Eugene Bagdasarian](https://people.cs.umass.edu/~eugene/). I work on <u>AI security and safety, with a focus on making AI agents and language models transparent, reliable, and aligned with human needs</u>.
 
